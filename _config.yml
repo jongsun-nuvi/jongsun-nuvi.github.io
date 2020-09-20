@@ -29,8 +29,8 @@ url: "https://jongsun-nuvi.github.io" # the base hostname & protocol for your si
 github_username:  jongsun-nuvi
 
 # Build settings
-#remote-theme: pmarsceill/just-the-docs
-theme : just-the-docs
+remote_theme: pmarsceill/just-the-docs
+#theme : just-the-docs
 
 logo : "/assets/images/logo.png"
 
