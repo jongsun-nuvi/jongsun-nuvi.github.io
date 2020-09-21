@@ -21,11 +21,12 @@
 
 
 title: 코드 규칙
+tagline: "|"
 email: jongsun.yun@nuvi-labs.com
 description: >- # this means to ignore newlines until "baseurl:"
   nuvi-labs code convention doc test
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://jongsun-nuvi.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://jongsun-nuvi.github.io" 
 github_username:  jongsun-nuvi
 
 # Build settings
