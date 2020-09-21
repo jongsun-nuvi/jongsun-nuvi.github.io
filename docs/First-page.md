@@ -20,16 +20,16 @@ nav_order: 2
 
 ## 파일 구조   
 
--   소스 파일은 2000줄 내 로 한다
-    
--   public class는 한 파일 당 한 개만 넣는다
-    
+-   소스 파일은 2000줄 내 로 작성
+
+-   public class는 한 파일 당 한 개만 작성
 
 ###  소스 파일 구조
 
 
 1.  Beginning Comments
 소스파일은 파일에 대한 주석으로 시작
+
 ``` java
 /* 
  * Classname
@@ -42,8 +42,8 @@ nav_order: 2
 
 3.  Package and Import Statements
     
-4.  Class and Interface Declarations
-our spaces:
+4.  Class and Interface Declarations our spaces:
+
 ``` java
     if (isAwesome){
       return true
@@ -53,11 +53,11 @@ our spaces:
 ---
 ##  Indentation
 
--   들여쓰기는 4 spaces
+-   들여쓰기는 4 spaces로 작성
     
 ###  Line Length
 
--   한 줄은 100자 이내로
+-   한 줄은 100자 이내로 작성
     
 
 ### Wrapping Lines
@@ -130,10 +130,10 @@ our spaces:
 ##  Declarations
 
 
-### Number per Line
+#### Number per Line
 
 
--   한 변수는 한 줄에
+-   한 줄에 한 변수만 작성
     
     ```java
     int a, b;		// wrong
@@ -142,47 +142,47 @@ our spaces:
     int b;
     ```
 
-### Initialization
+#### Initialization
 
 
--   선언 되었을 때 초기화 권장
+-   선언할 때 초기화 권장
     
 
-### Placement
+#### Placement
 
 
--   블록의 맨 처음
+-   블록의 맨 처음에 작성
     
 
 ### Class and Interface Declarations
 
 
--   Method 이름이랑 ‘(‘ 사이에 공백 없음
+-   Method 이름이랑 ‘(‘ 사이에 공백 없이 작성
     
--   ‘{‘ 는 declaration statement랑 같은 라인
+-   ‘{‘ 는 declaration statement랑 같은 라인에 작성
     
--   ‘}’는 opening 블록에 맞춘다
+-   ‘}’는 opening 블록에 맞추어 작성
     
--   빈 블록은 ‘{}’ 으로 끝
+-   빈 블록은 ‘{}’ 으로 작성
     
 
 ---
 ## Statements
 
 
-1.  각각의 라인에는 한 statement만
+1.  각각의 라인에는 한 statement만 작성
 
 ### return Statements
 
 
--   return 가급적 마지막에
+-   return 가급적 마지막에 사용
 
 ### if, if-else, if else-if else Statements
 
 
--   한 줄만 있어도 {} 사용
+-   한 줄만 있어도 '{',  '}' 사용
 
--   else 는 ‘}’ 같은 줄
+-   else 는 ‘}’ 같은 줄에 한 칸 띄어쓰고 사용
 
 ### for Statements
 
