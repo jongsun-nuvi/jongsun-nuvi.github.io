@@ -57,17 +57,66 @@ our spaces:
     
 ###  Line Length
 
--   no longer than 100 characters
+-   한 줄은 100자 이내로
     
 
 ### Wrapping Lines
 
 
--   Break after a comma.
--   Break before an operator.
--   Prefer higher-level breaks to lower-level breaks.
--   Align the new line with the beginning of the expression at the same level on the previous line.
--   If the above rules lead to confusing code or to code that's squished up against the right margin, just indent 8 spaces instead.
+- ',' 앞에서 나눈다.
+
+- 연산자 뒤에서 나눈다.
+
+- 높은 수준부터 나누는걸 우선으로 한다.
+
+- 새로운 줄은 윗 줄의 같은 수준과 맞춘다
+
+- 위의 규칙을 지켰을 때 가독성을 떨어지면 들여쓰기를 8 spaces로 한다.
+
+- examples
+
+  ```java
+  // right
+  function(expression1, expression2, expression3,
+           expression4, expression5);
+  
+  // wrong : breaked before a comma
+  function(expression1, expression2, expression3
+           , expression4, expression5);
+  
+  // wrong : breaked after an operator
+  result = number1 * (number2 + number3 - number4) +
+  	 number5;
+  
+  // right
+  result = number1 * (number2 + number3 - number4)
+  	 + number5;
+  
+  //right : same level -> same indentation
+  var = blar1
+        * (blar21 + blar22
+           / (blar231 % blar232)
+           + (blar241 * blar242 + blar243))
+        + blar3
+        * (blar 41 + blar42)
+      
+  //wrong : confusing code
+  if (condition1
+      && condition2
+      || condition4) {
+      //statement
+  }
+  
+  //right
+  if (condition1
+      	&& condition2
+      	|| condition4) {
+      //statement
+  }
+  
+  ```
+
+  
 
 ---
 
@@ -86,6 +135,12 @@ our spaces:
 
 -   한 변수는 한 줄에
     
+    ```java
+    int a, b;		// wrong
+    
+    int a;			// right
+    int b;
+    ```
 
 ### Initialization
 
